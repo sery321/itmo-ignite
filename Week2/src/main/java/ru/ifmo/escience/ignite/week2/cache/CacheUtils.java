@@ -17,8 +17,7 @@ public class CacheUtils {
         cache.remove("FINISH");
 
         print("Primary entries: " + cache.localSize(CachePeekMode.PRIMARY));
-
-        //TODO PRINT NUMBER OF BACKUP ITEMS HERE
+        print("Backup entries: " + cache.localSize(CachePeekMode.BACKUP));
     }
 
     private CacheUtils() {
